@@ -1,0 +1,25 @@
+.undoRedo {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin: 10px 0 12px;
+}
+
+.undoRedoBtn {
+  padding: 10px 14px;
+  border-radius: 10px;
+  border: 1px solid var(--border);
+  background: #fff;
+  color: var(--text);
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.undoRedoBtn:hover {
+  background: #f3f4f6;
+}
+
+.undoRedoBtn:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}

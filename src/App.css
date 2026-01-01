@@ -1,0 +1,48 @@
+:root {
+  --bg: #f6f7fb;
+  --card: #ffffff;
+  --text: #111827;
+  --muted: #6b7280;
+  --border: #e5e7eb;
+}
+
+body {
+  margin: 0;
+  font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+  background: var(--bg);
+  color: var(--text);
+}
+
+.app {
+  max-width: 720px;
+  margin: 0 auto;
+  padding: 28px 16px;
+  text-align: center;
+}
+
+.title {
+  margin: 0 0 14px;
+  font-size: 34px;
+  letter-spacing: -0.4px;
+}
+
+.counterRow {
+  margin: 14px auto 18px;
+  padding: 14px;
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: 14px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.counterValue {
+  min-width: 90px;
+  margin: 0 8px;
+  font-size: 44px;
+  line-height: 1;
+}

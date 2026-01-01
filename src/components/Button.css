@@ -1,0 +1,25 @@
+.stepBtn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+
+  padding: 10px 12px;
+  border-radius: 10px;
+
+  border: 1px solid var(--border);
+  background: #fff;
+  color: var(--text);
+
+  cursor: pointer;
+  font-weight: 600;
+  min-width: 72px;
+}
+
+.stepBtn:hover {
+  background: #f3f4f6;
+}
+
+.stepBtn:active {
+  background: #e5e7eb;
+}

@@ -1,0 +1,57 @@
+.history {
+  margin-top: 14px;
+  padding: 14px;
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: 14px;
+  text-align: left;
+}
+
+.historyTitle {
+  margin: 0 0 10px;
+  text-align: center;
+}
+
+.historyGrid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 12px;
+}
+
+.historyCol h4 {
+  margin: 0 0 8px;
+  font-size: 14px;
+  color: var(--muted);
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.6px;
+}
+
+.historyList {
+  margin: 0;
+  padding-left: 18px;
+}
+
+.historyList li {
+  margin: 6px 0;
+}
+
+.historyPresent {
+  margin: 0;
+  font-size: 22px;
+  font-weight: 800;
+  color: var(--text);
+}
+
+.historyEmpty {
+  margin: 0;
+  color: var(--muted);
+  font-style: italic;
+}
+
+/* Responsive: stack columns on small screens */
+@media (max-width: 520px) {
+  .historyGrid {
+    grid-template-columns: 1fr;
+  }
+}
