@@ -27,14 +27,11 @@ jobs:
           node-version: 20
           cache: npm
 
-      - name: Install dependencies
+      - name: Install
         run: npm ci
 
-      # IMPORTANT for Vite + GitHub Pages when repo is not username.github.io
       - name: Build
         run: npm run build
-        env:
-          BASE_URL: /${{ github.event.repository.name }}/
 
       - name: Setup Pages
         uses: actions/configure-pages@v5
